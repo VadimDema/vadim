@@ -1,0 +1,17 @@
+Проект Visual Studio должен быть закрыт
+в папке, где лежит файл .sln открыть консоль. Правая кнопка мыши Git Bash Here.
+Инициализируем репозиторий. git init. В папке создастся папка .git
+Для проверки видит ли он файлы git status
+Для добавления файлов в  комит git add . (точку НЕ забываем)
+Дальше создаем комит git commit -m "init"
+Он может Вас попросить указать имя пользователя и почту того, кто вносит изменения. Эти данные нигде не проверяются. 
+
+Далее вам нужно создать токен. https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+Settings. -> Developer settings -> Personal access tokens -> Generate new token -> repo
+Generate token
+.Он используется вместо парол от ГИТ
+
+Далее создаете новый репозиторий (БЕЗ Readme файла) и копируете команду 
+git remote add origin https://github.com/username/RepoName.git
+А теперь для пуш
+git push https://username:токен@github.com/Julia-Zhirnova/testPK1.git
